@@ -1,6 +1,6 @@
 {
-  "name": "palmiak/timber-acf-wp-blocks",
-  "description": "Create Gutenberg blocks from Twig templates and ACF fields.",
+  "name": "ocebo/timber-acf-wp-blocks",
+  "description": "Create Gutenberg blocks from Twig templates and ACF fields. // FORKED",
   "keywords": ["wordpress", "gutenberg", "advanced custom fields"],
   "require": {
       "php": ">=5.6"
