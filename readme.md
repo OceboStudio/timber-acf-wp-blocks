@@ -33,6 +33,7 @@ Add twig templates to `views/blocks` which get and use ACF data. Each template r
   SupportsAlign: left right
   SupportsMode: false
   SupportsMultiple: false
+  SupportsAnchor: false
 #}
 
 <blockquote data-{{ block.id }}>
