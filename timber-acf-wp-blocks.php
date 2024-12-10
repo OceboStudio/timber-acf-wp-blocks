@@ -111,6 +111,7 @@ if ( ! class_exists( 'Timber_Acf_Wp_Blocks' ) ) {
 						'render_callback' => array( __CLASS__, 'timber_blocks_callback' ),
 						'enqueue_assets'  => $file_headers['enqueue_assets'],
 						'default_data'    => $file_headers['default_data'],
+						'supports_anchor'    => $file_headers['supports_anchor'] ?? true,
 					);
 
 					// Removes empty defaults.
@@ -132,7 +133,7 @@ if ( ! class_exists( 'Timber_Acf_Wp_Blocks' ) ) {
 					// If the SupportsAlignContent header is set in the template, restrict this block
 					// to those aligns.
 					if ( ! empty( $file_headers['supports_align_content'] ) ) {
-						$data['supports']['alignContent'] = ('true' === $file_headers['supports_align_content']) ? 
+						$data['supports']['alignContent'] = ('true' === $file_headers['supports_align_content']) ?
 							true : (('matrix' === $file_headers['supports_align_content']) ? "matrix" : false);
 					}
 					// If the SupportsMode header is set in the template, restrict this block
